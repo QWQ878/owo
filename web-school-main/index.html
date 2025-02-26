@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>借用的電腦</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>借用的電腦</h1>
+
+    {% for i in range(1, 13) %}
+        <div class="section">
+            <h2>標題 {{ i }}</h2>
+            <button>按鈕 {{ i }}-1</button>
+            <button>按鈕 {{ i }}-2</button>
+        </div>
+    {% endfor %}
+</body>
+</html>
